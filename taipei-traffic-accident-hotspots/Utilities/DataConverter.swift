@@ -1,10 +1,3 @@
-//
-//  CsvToJson.swift
-//  taipei-traffic-accident-hotspots
-//
-//  Created by Lin Hill on 2022/8/5.
-//
-
 import Foundation
 
 struct DataConverter {

@@ -25,6 +25,15 @@
                                     <segue destination="Vl8-Qz-0QK" kind="show" id="4iZ-Gi-wdR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAU-0e-0z2">
+                                <rect key="frame" x="156" y="276" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="FUW-oC-YUl" kind="show" id="XBC-PR-uBI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -82,6 +91,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzy-FL-tdz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="925" y="70"/>
+        </scene>
+        <!--Accident MapVC-->
+        <scene sceneID="xF9-YP-ATQ">
+            <objects>
+                <viewController id="FUW-oC-YUl" customClass="AccidentMapVC" customModule="taipei_traffic_accident_hotspots" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QLU-g5-Pv2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WaM-w5-k6J">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <connections>
+                                    <outlet property="delegate" destination="FUW-oC-YUl" id="yJC-8k-758"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="z0S-un-GMi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z0S-un-GMi" firstAttribute="trailing" secondItem="WaM-w5-k6J" secondAttribute="trailing" id="AMD-b9-I67"/>
+                            <constraint firstItem="WaM-w5-k6J" firstAttribute="top" secondItem="z0S-un-GMi" secondAttribute="top" id="BAI-ZK-2aY"/>
+                            <constraint firstItem="WaM-w5-k6J" firstAttribute="leading" secondItem="z0S-un-GMi" secondAttribute="leading" id="Lc9-zK-yfm"/>
+                            <constraint firstItem="z0S-un-GMi" firstAttribute="bottom" secondItem="WaM-w5-k6J" secondAttribute="bottom" id="Qo0-Kk-QnX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gIV-Qd-Kcb"/>
+                    <connections>
+                        <outlet property="mMapView" destination="WaM-w5-k6J" id="lkb-Q8-py4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VwJ-Ip-xZK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1642" y="70"/>
         </scene>
     </scenes>
     <resources>

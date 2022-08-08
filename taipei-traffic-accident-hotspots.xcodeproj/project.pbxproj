@@ -14,10 +14,7 @@
 		E90F0170289CE892004E334E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90F016F289CE892004E334E /* Assets.xcassets */; };
 		E90F0173289CE892004E334E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90F0171289CE892004E334E /* LaunchScreen.storyboard */; };
 		E90F0181289CE94C004E334E /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F017B289CE94C004E334E /* WebServices.swift */; };
-		E90F0182289CE94C004E334E /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F017C289CE94C004E334E /* Session.swift */; };
 		E90F0183289CE94C004E334E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F017D289CE94C004E334E /* Network.swift */; };
-		E90F0184289CE94C004E334E /* Attendee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F017E289CE94C004E334E /* Attendee.swift */; };
-		E90F0185289CE94C004E334E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F017F289CE94C004E334E /* Event.swift */; };
 		E90F0186289CE94C004E334E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F0180289CE94C004E334E /* NetworkError.swift */; };
 		E90F0188289CE9F0004E334E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F0187289CE9F0004E334E /* Constants.swift */; };
 		E9FD4FD0289D1C740005698C /* 101.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9FD4FCF289D1C740005698C /* 101.txt */; };
@@ -26,6 +23,7 @@
 		E9FD4FDB289FB8FC0005698C /* AccidentListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4FDA289FB8FC0005698C /* AccidentListVC.swift */; };
 		E9FD4FDE289FB9720005698C /* AccidentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4FDD289FB9720005698C /* AccidentListViewModel.swift */; };
 		E9FD4FE028A0680F0005698C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4FDF28A0680F0005698C /* Extensions.swift */; };
+		E9FD4FE228A070210005698C /* AccidentMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4FE128A070210005698C /* AccidentMapVC.swift */; };
 		E9FD6B11289D188600804AE4 /* DataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD6B10289D188600804AE4 /* DataConverter.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,10 +37,7 @@
 		E90F0172289CE892004E334E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E90F0174289CE892004E334E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90F017B289CE94C004E334E /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
-		E90F017C289CE94C004E334E /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		E90F017D289CE94C004E334E /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		E90F017E289CE94C004E334E /* Attendee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attendee.swift; sourceTree = "<group>"; };
-		E90F017F289CE94C004E334E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		E90F0180289CE94C004E334E /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		E90F0187289CE9F0004E334E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E9FD4FCF289D1C740005698C /* 101.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 101.txt; sourceTree = "<group>"; };
@@ -51,6 +46,7 @@
 		E9FD4FDA289FB8FC0005698C /* AccidentListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccidentListVC.swift; sourceTree = "<group>"; };
 		E9FD4FDD289FB9720005698C /* AccidentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccidentListViewModel.swift; sourceTree = "<group>"; };
 		E9FD4FDF28A0680F0005698C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E9FD4FE128A070210005698C /* AccidentMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccidentMapVC.swift; sourceTree = "<group>"; };
 		E9FD6B10289D188600804AE4 /* DataConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,13 +82,11 @@
 			children = (
 				E90F0166289CE891004E334E /* AppDelegate.swift */,
 				E90F0168289CE891004E334E /* SceneDelegate.swift */,
-				E9FD4FCF289D1C740005698C /* 101.txt */,
 				E90F017A289CE942004E334E /* Model */,
-				E9FD4FD7289FB84A0005698C /* Utilities */,
+				E9FD4FE328A11AA90005698C /* View */,
 				E9FD4FDC289FB9580005698C /* ViewModel */,
-				E90F016A289CE891004E334E /* ViewController.swift */,
-				E9FD4FDA289FB8FC0005698C /* AccidentListVC.swift */,
-				E90F016C289CE891004E334E /* Main.storyboard */,
+				E9FD4FD7289FB84A0005698C /* Utilities */,
+				E9FD4FE428A11AD50005698C /* resources */,
 				E90F016F289CE892004E334E /* Assets.xcassets */,
 				E90F0171289CE892004E334E /* LaunchScreen.storyboard */,
 				E90F0174289CE892004E334E /* Info.plist */,
@@ -104,13 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				E9FD4FD3289FB7670005698C /* AccidentLocation.swift */,
-				E90F017E289CE94C004E334E /* Attendee.swift */,
-				E90F017C289CE94C004E334E /* Session.swift */,
-				E90F017F289CE94C004E334E /* Event.swift */,
 				E90F017D289CE94C004E334E /* Network.swift */,
 				E90F0180289CE94C004E334E /* NetworkError.swift */,
 				E90F017B289CE94C004E334E /* WebServices.swift */,
-				E9FD6B10289D188600804AE4 /* DataConverter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				E90F0187289CE9F0004E334E /* Constants.swift */,
+				E9FD6B10289D188600804AE4 /* DataConverter.swift */,
 				E9FD4FD5289FB83D0005698C /* Box.swift */,
 				E9FD4FDF28A0680F0005698C /* Extensions.swift */,
 			);
@@ -131,6 +122,25 @@
 				E9FD4FDD289FB9720005698C /* AccidentListViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E9FD4FE328A11AA90005698C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E90F016C289CE891004E334E /* Main.storyboard */,
+				E90F016A289CE891004E334E /* ViewController.swift */,
+				E9FD4FDA289FB8FC0005698C /* AccidentListVC.swift */,
+				E9FD4FE128A070210005698C /* AccidentMapVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9FD4FE428A11AD50005698C /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				E9FD4FCF289D1C740005698C /* 101.txt */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E90F0185289CE94C004E334E /* Event.swift in Sources */,
-				E90F0182289CE94C004E334E /* Session.swift in Sources */,
+				E9FD4FE228A070210005698C /* AccidentMapVC.swift in Sources */,
 				E90F016B289CE891004E334E /* ViewController.swift in Sources */,
 				E9FD4FDB289FB8FC0005698C /* AccidentListVC.swift in Sources */,
 				E90F0183289CE94C004E334E /* Network.swift in Sources */,
@@ -218,7 +227,6 @@
 				E90F0181289CE94C004E334E /* WebServices.swift in Sources */,
 				E9FD4FE028A0680F0005698C /* Extensions.swift in Sources */,
 				E90F0186289CE94C004E334E /* NetworkError.swift in Sources */,
-				E90F0184289CE94C004E334E /* Attendee.swift in Sources */,
 				E9FD4FD4289FB7670005698C /* AccidentLocation.swift in Sources */,
 				E90F0169289CE891004E334E /* SceneDelegate.swift in Sources */,
 			);
@@ -369,7 +377,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NGZ94TQPT7;
+				DEVELOPMENT_TEAM = XQK4Y7GDM3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "taipei-traffic-accident-hotspots/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -397,7 +405,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NGZ94TQPT7;
+				DEVELOPMENT_TEAM = XQK4Y7GDM3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "taipei-traffic-accident-hotspots/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
