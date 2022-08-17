@@ -10,6 +10,7 @@ class AccidentMapVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        mMapView.userTrackingMode = .follow
         viewModel.locations.bind { [weak self] locations in
             self?.mMapView.addAnnotations(locations)
         }
