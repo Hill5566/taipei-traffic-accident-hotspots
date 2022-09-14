@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         locationManager.requestAlwaysAuthorization()
         locationManager.startMonitoringVisits()
         locationManager.delegate = self
-        
+        //
         return true
     }
     
