@@ -9,9 +9,8 @@ class AccidentMapVC: UIViewController {
         viewModel.lockAtUserLocation.value = true
     }
     
-    let locationManager = CLLocationManager()
-
-    let viewModel = AccidentListViewModel()
+    private let locationManager = CLLocationManager()
+    private let viewModel = AccidentListViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +26,19 @@ class AccidentMapVC: UIViewController {
             }
         }
         
+        viewModel.destinationLocation.bind { [weak self] annotation in
+            guard let self = self, let annotation = annotation else { return }
+            self.mMapView.addAnnotation(annotation)
+        }
+        
+        viewModel.destinationRoute.bind { [weak self] route in
+            guard let self = self, let route = route else { return }
+            self.mMapView.addOverlay(route.polyline)
+            self.mMapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
+        }
+        
+        viewModel.naviTo(destination: "台中")
+        
         mMapView.userTrackingMode = .follow
         mMapView.delegate = self
 
@@ -36,7 +48,7 @@ class AccidentMapVC: UIViewController {
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
     }
-
+    
     fileprivate func moveRegionTo(_ location: CLLocation) {
         mMapView.region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude), latitudinalMeters: 200, longitudinalMeters: 200)
     }
@@ -53,6 +65,7 @@ class AccidentMapVC: UIViewController {
         return false
     }
 }
+    
 extension AccidentMapVC: CLLocationManagerDelegate {
  
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -73,5 +86,32 @@ extension AccidentMapVC: MKMapViewDelegate {
         if mapViewRegionDidChangeFromUserInteraction() {
             viewModel.lockAtUserLocation.value = false
         }
+    }
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        
+        var resultRender = MKOverlayRenderer()
+        
+        if overlay is MKPolyline {
+            
+            let render: MKPolylineRenderer = MKPolylineRenderer(overlay: overlay)
+            
+            render.lineWidth = 4
+            render.strokeColor = .systemBlue
+            
+            resultRender = render
+            
+        } else if overlay is MKCircle {
+
+            let circleRender: MKCircleRenderer = MKCircleRenderer(overlay: overlay)
+            
+            circleRender.fillColor = .lightGray
+            circleRender.alpha = 0.3
+            circleRender.strokeColor = .blue
+            circleRender.lineWidth = 2
+            
+            resultRender = circleRender
+        }
+        return resultRender
     }
 }
