@@ -2,6 +2,8 @@ import Foundation
 import CoreLocation
 import MapKit
 
+//「處理別」指交通事故類別：「1類」指造成人員當場或24小時內死亡之交通事故；「2類」指造成人員受傷或超過24小時死亡之交通事故；「3類」指僅有車輛財物受損之交通事故。
+
 class AccidentLocation: NSObject, Codable {
     let 發生時間,處理別,肇事地點: String
     let latitude: Double
@@ -32,3 +34,4 @@ extension AccidentLocation: MKAnnotation {
 //        lhs.longitude == rhs.longitude
 //    }
 //}
+

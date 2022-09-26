@@ -1,6 +1,11 @@
 import Foundation
+import CoreLocation
 
 class AccidentListViewModel {
+    
+    var userLocation: CLLocation? = nil
+
+    var lockAtUserLocation: Box<Bool> = Box(true)
     
     let locations: Box<[AccidentLocation]> = Box([])
     
@@ -11,6 +16,6 @@ class AccidentListViewModel {
             locationsArray.append(AccidentLocation(dictionary: location))
         }
         locations.value = locationsArray
-        print(locations)
+//        print(locations.value)
     }
 }

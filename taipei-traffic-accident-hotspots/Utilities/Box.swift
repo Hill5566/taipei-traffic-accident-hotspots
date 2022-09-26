@@ -7,7 +7,9 @@ final class Box<T> {
     
     var value: T {
         didSet {
-            listener?(value)
+            DispatchQueue.main.async {
+                self.listener?(self.value)
+            }
         }
     }
     
@@ -15,8 +17,14 @@ final class Box<T> {
         self.value = value
     }
     
-    func bind(listener: Listener?) {
+    func bind(fireNow: Bool = false, listener: Listener?) {
         self.listener = listener
-        listener?(value)
+        if fireNow {
+            listener?(value)
+        }
+    }
+    
+    func unbind() {
+        listener = nil
     }
 }
