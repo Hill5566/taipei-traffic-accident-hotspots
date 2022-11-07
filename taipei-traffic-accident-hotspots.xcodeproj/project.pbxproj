@@ -17,8 +17,12 @@
 		E90F0183289CE94C004E334E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F017D289CE94C004E334E /* Network.swift */; };
 		E90F0186289CE94C004E334E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F0180289CE94C004E334E /* NetworkError.swift */; };
 		E90F0188289CE9F0004E334E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F0187289CE9F0004E334E /* Constants.swift */; };
+		E9978BC328FAACA2000DD620 /* police speed traps.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9978BC228FAACA2000DD620 /* police speed traps.txt */; };
+		E9978BC528FAAD47000DD620 /* SpeedTraps.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9978BC428FAAD47000DD620 /* SpeedTraps.swift */; };
 		E9A9311D28AD656300080EC7 /* 2021.csv in Resources */ = {isa = PBXBuildFile; fileRef = E9A9311C28AD656300080EC7 /* 2021.csv */; };
 		E9A9312128AD674C00080EC7 /* 101.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9A9312028AD674C00080EC7 /* 101.txt */; };
+		E9E193D6291952AA00003064 /* SpeedTrapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E193D5291952AA00003064 /* SpeedTrapViewModel.swift */; };
+		E9E193D82919640000003064 /* Navi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E193D72919640000003064 /* Navi.swift */; };
 		E9FD4FD4289FB7670005698C /* AccidentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4FD3289FB7670005698C /* AccidentLocation.swift */; };
 		E9FD4FD6289FB83D0005698C /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4FD5289FB83D0005698C /* Box.swift */; };
 		E9FD4FDB289FB8FC0005698C /* AccidentListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4FDA289FB8FC0005698C /* AccidentListVC.swift */; };
@@ -41,8 +45,12 @@
 		E90F017D289CE94C004E334E /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		E90F0180289CE94C004E334E /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		E90F0187289CE9F0004E334E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		E9A9311C28AD656300080EC7 /* 2021.csv */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2021.csv; sourceTree = SOURCE_ROOT; };
+		E9978BC228FAACA2000DD620 /* police speed traps.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "police speed traps.txt"; sourceTree = "<group>"; };
+		E9978BC428FAAD47000DD620 /* SpeedTraps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTraps.swift; sourceTree = "<group>"; };
+		E9A9311C28AD656300080EC7 /* 2021.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = 2021.csv; sourceTree = SOURCE_ROOT; };
 		E9A9312028AD674C00080EC7 /* 101.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 101.txt; sourceTree = SOURCE_ROOT; };
+		E9E193D5291952AA00003064 /* SpeedTrapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTrapViewModel.swift; sourceTree = "<group>"; };
+		E9E193D72919640000003064 /* Navi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navi.swift; sourceTree = "<group>"; };
 		E9FD4FD3289FB7670005698C /* AccidentLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentLocation.swift; sourceTree = "<group>"; };
 		E9FD4FD5289FB83D0005698C /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		E9FD4FDA289FB8FC0005698C /* AccidentListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccidentListVC.swift; sourceTree = "<group>"; };
@@ -100,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				E9FD4FD3289FB7670005698C /* AccidentLocation.swift */,
+				E9978BC428FAAD47000DD620 /* SpeedTraps.swift */,
 				E90F017D289CE94C004E334E /* Network.swift */,
 				E90F0180289CE94C004E334E /* NetworkError.swift */,
 				E90F017B289CE94C004E334E /* WebServices.swift */,
@@ -112,6 +121,7 @@
 			children = (
 				E90F0187289CE9F0004E334E /* Constants.swift */,
 				E9FD6B10289D188600804AE4 /* DataConverter.swift */,
+				E9E193D72919640000003064 /* Navi.swift */,
 				E9FD4FD5289FB83D0005698C /* Box.swift */,
 				E9FD4FDF28A0680F0005698C /* Extensions.swift */,
 			);
@@ -122,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				E9FD4FDD289FB9720005698C /* AccidentListViewModel.swift */,
+				E9E193D5291952AA00003064 /* SpeedTrapViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -142,6 +153,7 @@
 			children = (
 				E9A9312028AD674C00080EC7 /* 101.txt */,
 				E9A9311C28AD656300080EC7 /* 2021.csv */,
+				E9978BC228FAACA2000DD620 /* police speed traps.txt */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -209,6 +221,7 @@
 				E90F0170289CE892004E334E /* Assets.xcassets in Resources */,
 				E90F016E289CE891004E334E /* Main.storyboard in Resources */,
 				E9A9311D28AD656300080EC7 /* 2021.csv in Resources */,
+				E9978BC328FAACA2000DD620 /* police speed traps.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,10 +239,13 @@
 				E90F0167289CE891004E334E /* AppDelegate.swift in Sources */,
 				E9FD6B11289D188600804AE4 /* DataConverter.swift in Sources */,
 				E9FD4FD6289FB83D0005698C /* Box.swift in Sources */,
+				E9E193D6291952AA00003064 /* SpeedTrapViewModel.swift in Sources */,
 				E9FD4FDE289FB9720005698C /* AccidentListViewModel.swift in Sources */,
 				E90F0188289CE9F0004E334E /* Constants.swift in Sources */,
 				E90F0181289CE94C004E334E /* WebServices.swift in Sources */,
+				E9E193D82919640000003064 /* Navi.swift in Sources */,
 				E9FD4FE028A0680F0005698C /* Extensions.swift in Sources */,
+				E9978BC528FAAD47000DD620 /* SpeedTraps.swift in Sources */,
 				E90F0186289CE94C004E334E /* NetworkError.swift in Sources */,
 				E9FD4FD4289FB7670005698C /* AccidentLocation.swift in Sources */,
 				E90F0169289CE891004E334E /* SceneDelegate.swift in Sources */,
