@@ -23,6 +23,7 @@
 		E9A9312128AD674C00080EC7 /* 101.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9A9312028AD674C00080EC7 /* 101.txt */; };
 		E9E193D6291952AA00003064 /* SpeedTrapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E193D5291952AA00003064 /* SpeedTrapViewModel.swift */; };
 		E9E193D82919640000003064 /* Navi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E193D72919640000003064 /* Navi.swift */; };
+		E9E193DA291A4C1600003064 /* SpeedTrapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E193D9291A4C1600003064 /* SpeedTrapVC.swift */; };
 		E9FD4FD4289FB7670005698C /* AccidentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4FD3289FB7670005698C /* AccidentLocation.swift */; };
 		E9FD4FD6289FB83D0005698C /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4FD5289FB83D0005698C /* Box.swift */; };
 		E9FD4FDB289FB8FC0005698C /* AccidentListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4FDA289FB8FC0005698C /* AccidentListVC.swift */; };
@@ -51,6 +52,7 @@
 		E9A9312028AD674C00080EC7 /* 101.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 101.txt; sourceTree = SOURCE_ROOT; };
 		E9E193D5291952AA00003064 /* SpeedTrapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTrapViewModel.swift; sourceTree = "<group>"; };
 		E9E193D72919640000003064 /* Navi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navi.swift; sourceTree = "<group>"; };
+		E9E193D9291A4C1600003064 /* SpeedTrapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTrapVC.swift; sourceTree = "<group>"; };
 		E9FD4FD3289FB7670005698C /* AccidentLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentLocation.swift; sourceTree = "<group>"; };
 		E9FD4FD5289FB83D0005698C /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		E9FD4FDA289FB8FC0005698C /* AccidentListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccidentListVC.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				E90F016A289CE891004E334E /* ViewController.swift */,
 				E9FD4FDA289FB8FC0005698C /* AccidentListVC.swift */,
 				E9FD4FE128A070210005698C /* AccidentMapVC.swift */,
+				E9E193D9291A4C1600003064 /* SpeedTrapVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				E9FD4FE228A070210005698C /* AccidentMapVC.swift in Sources */,
 				E90F016B289CE891004E334E /* ViewController.swift in Sources */,
 				E9FD4FDB289FB8FC0005698C /* AccidentListVC.swift in Sources */,
+				E9E193DA291A4C1600003064 /* SpeedTrapVC.swift in Sources */,
 				E90F0183289CE94C004E334E /* Network.swift in Sources */,
 				E90F0167289CE891004E334E /* AppDelegate.swift in Sources */,
 				E9FD6B11289D188600804AE4 /* DataConverter.swift in Sources */,

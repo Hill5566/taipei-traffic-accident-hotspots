@@ -30,7 +30,7 @@ class AccidentListViewModel {
 //            self.mMapView.addOverlay(circle2)
             
             let annotation: MKPointAnnotation = MKPointAnnotation()
-            annotation.title = "台中"
+            annotation.title = destination
             annotation.coordinate = (pls?.first?.location?.coordinate)!
             
             self?.destinationLocation.value = annotation

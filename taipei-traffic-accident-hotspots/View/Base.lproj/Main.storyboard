@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FUW-oC-YUl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F0y-BH-Ylz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="taipei_traffic_accident_hotspots" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -21,45 +23,39 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="Vl8-Qz-0QK" kind="show" id="4iZ-Gi-wdR"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAU-0e-0z2">
                                 <rect key="frame" x="156" y="276" width="67" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="FUW-oC-YUl" kind="show" id="XBC-PR-uBI"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="CWJ-wo-Da0"/>
                     <connections>
                         <outlet property="mTableView" destination="Nx1-Gt-29B" id="XKy-x6-CGF"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="70"/>
+            <point key="canvasLocation" x="895.6521739130435" y="69.642857142857139"/>
         </scene>
-        <!--Accident ListVC-->
+        <!--Item-->
         <scene sceneID="U6s-kU-Pi1">
             <objects>
                 <viewController id="Vl8-Qz-0QK" customClass="AccidentListVC" customModule="taipei_traffic_accident_hotspots" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c4y-8E-dFp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Nx1-Gt-29B">
-                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Sfd-Da-8QH">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sfd-Da-8QH" id="yBO-cc-deF">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -83,6 +79,7 @@
                             <constraint firstItem="Nx1-Gt-29B" firstAttribute="bottom" secondItem="2QJ-0O-6Kb" secondAttribute="bottom" id="rlE-th-1pG"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="6ky-MH-8YS"/>
                     <navigationItem key="navigationItem" id="hfG-99-7wh"/>
                     <connections>
                         <outlet property="mTableView" destination="Nx1-Gt-29B" id="xAM-hN-mI5"/>
@@ -90,24 +87,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzy-FL-tdz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="70"/>
+            <point key="canvasLocation" x="1834.7826086956522" y="69.642857142857139"/>
         </scene>
-        <!--Accident MapVC-->
+        <!--交通事故-->
         <scene sceneID="xF9-YP-ATQ">
             <objects>
-                <viewController id="FUW-oC-YUl" customClass="AccidentMapVC" customModule="taipei_traffic_accident_hotspots" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccidentMapVC" id="FUW-oC-YUl" customClass="AccidentMapVC" customModule="taipei_traffic_accident_hotspots" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QLU-g5-Pv2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WaM-w5-k6J">
-                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsTraffic="YES" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WaM-w5-k6J">
+                                <rect key="frame" x="0.0" y="48" width="414" height="765"/>
                                 <connections>
                                     <outlet property="delegate" destination="FUW-oC-YUl" id="yJC-8k-758"/>
                                 </connections>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZR-RT-OZF">
-                                <rect key="frame" x="364" y="778" width="30" height="30"/>
+                                <rect key="frame" x="364" y="749" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Ss8-Pe-hWv"/>
                                     <constraint firstAttribute="width" constant="30" id="scb-Vo-Meg"/>
@@ -136,6 +133,7 @@
                             <constraint firstItem="z0S-un-GMi" firstAttribute="trailing" secondItem="kZR-RT-OZF" secondAttribute="trailing" constant="20" id="zNe-Aj-ttk"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="交通事故" id="ob7-z3-qwf"/>
                     <navigationItem key="navigationItem" id="gIV-Qd-Kcb"/>
                     <connections>
                         <outlet property="mCompassButton" destination="kZR-RT-OZF" id="tn5-34-7Qh"/>
@@ -144,7 +142,80 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VwJ-Ip-xZK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1642" y="70"/>
+            <point key="canvasLocation" x="4213.04347826087" y="69.642857142857139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dYZ-fR-R4H">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="F0y-BH-Ylz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dxf-46-k2f">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="FUW-oC-YUl" kind="relationship" relationship="viewControllers" id="hZT-pN-8Np"/>
+                        <segue destination="qBl-96-Xda" kind="relationship" relationship="viewControllers" id="1fC-3B-NNS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yrl-sH-JO7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3302.898550724638" y="69.642857142857139"/>
+        </scene>
+        <!--測速照相-->
+        <scene sceneID="BNu-d2-m8I">
+            <objects>
+                <viewController storyboardIdentifier="SpeedTrapVC" id="qBl-96-Xda" customClass="SpeedTrapVC" customModule="taipei_traffic_accident_hotspots" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aiE-jw-ZzR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsTraffic="YES" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y4o-Sk-IMW">
+                                <rect key="frame" x="0.0" y="48" width="414" height="765"/>
+                                <connections>
+                                    <outlet property="delegate" destination="qBl-96-Xda" id="jEf-hY-TaQ"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQK-ea-86F">
+                                <rect key="frame" x="364" y="749" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5YQ-xN-GUp"/>
+                                    <constraint firstAttribute="width" constant="30" id="UIB-Ig-WHD"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="icons8-Tiny Glyph-GPS-unlock"/>
+                                <state key="selected" backgroundImage="icons8-Tiny Glyph-GPS"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="compassClick:" destination="qBl-96-Xda" eventType="touchUpInside" id="icm-BE-Ns7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ebG-4L-hwN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ebG-4L-hwN" firstAttribute="bottom" secondItem="Y4o-Sk-IMW" secondAttribute="bottom" id="65q-OD-fhL"/>
+                            <constraint firstItem="ebG-4L-hwN" firstAttribute="trailing" secondItem="Y4o-Sk-IMW" secondAttribute="trailing" id="B3Z-6r-z22"/>
+                            <constraint firstItem="Y4o-Sk-IMW" firstAttribute="leading" secondItem="ebG-4L-hwN" secondAttribute="leading" id="O7g-Bj-Y88"/>
+                            <constraint firstItem="ebG-4L-hwN" firstAttribute="trailing" secondItem="aQK-ea-86F" secondAttribute="trailing" constant="20" id="evw-z5-NIf"/>
+                            <constraint firstItem="ebG-4L-hwN" firstAttribute="bottom" secondItem="aQK-ea-86F" secondAttribute="bottom" constant="34" id="gyk-wq-V9f"/>
+                            <constraint firstItem="Y4o-Sk-IMW" firstAttribute="top" secondItem="ebG-4L-hwN" secondAttribute="top" id="ik6-sm-ou3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="測速照相" id="Akc-wT-MRf"/>
+                    <navigationItem key="navigationItem" id="sJ5-26-xag"/>
+                    <connections>
+                        <outlet property="mCompassButton" destination="aQK-ea-86F" id="ps8-y4-Ttl"/>
+                        <outlet property="mMapView" destination="Y4o-Sk-IMW" id="J1P-Ff-wJu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="glg-Pb-e5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5039" y="70"/>
         </scene>
     </scenes>
     <resources>
